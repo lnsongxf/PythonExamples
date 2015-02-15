@@ -15,4 +15,7 @@ r4 = ('|').join(keyword.kwlist)
 print(re.findall(r4, "del"))
 
 # match street addresses
-r5 = ''
+r5 = '\d+\s[\w+\s]+'
+print(re.findall(r5, "9800 de la Soul Boulevard"))
+
+#
