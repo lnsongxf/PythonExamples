@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - @localhost" uuid="afe3cbf1-bc5b-4230-b5d6-e3bf7350ee8e">
-    <database-info product="MySQL" version="5.6.23" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+  <data-source name="MySQL - @localhost" uuid="30ade1d7-2250-45e9-9bab-331c792f6064">
+    <database-info product="MySQL" version="5.5.41-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
@@ -38,12 +38,11 @@
       <column name="CHARACTER_OCTET_LENGTH" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
       <column name="NUMERIC_PRECISION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
       <column name="NUMERIC_SCALE" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="DATETIME_PRECISION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
       <column name="COLLATION_NAME" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
       <column name="COLUMN_TYPE" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
       <column name="COLUMN_KEY" sqlType="VARCHAR" precision="3" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="EXTRA" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="EXTRA" sqlType="VARCHAR" precision="27" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="PRIVILEGES" sqlType="VARCHAR" precision="80" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="COLUMN_COMMENT" sqlType="VARCHAR" precision="1024" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
     </table>
@@ -240,26 +239,6 @@
       <column name="relocation_ops" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
       <column name="relocation_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
     </table>
-    <table name="INNODB_CMP_PER_INDEX" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="database_name" sqlType="VARCHAR" precision="192" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="table_name" sqlType="VARCHAR" precision="192" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="index_name" sqlType="VARCHAR" precision="192" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="compress_ops" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="compress_ops_ok" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="compress_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="uncompress_ops" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="uncompress_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_CMP_PER_INDEX_RESET" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="database_name" sqlType="VARCHAR" precision="192" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="table_name" sqlType="VARCHAR" precision="192" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="index_name" sqlType="VARCHAR" precision="192" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="compress_ops" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="compress_ops_ok" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="compress_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="uncompress_ops" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="uncompress_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
     <table name="INNODB_CMP_RESET" schema="" catalog="information_schema" type="SYSTEM VIEW">
       <column name="page_size" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="compress_ops" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
@@ -267,35 +246,6 @@
       <column name="compress_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="uncompress_ops" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="uncompress_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_FT_BEING_DELETED" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-    </table>
-    <table name="INNODB_FT_CONFIG" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="KEY" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="VALUE" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-    </table>
-    <table name="INNODB_FT_DEFAULT_STOPWORD" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="value" sqlType="VARCHAR" precision="18" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-    </table>
-    <table name="INNODB_FT_DELETED" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-    </table>
-    <table name="INNODB_FT_INDEX_CACHE" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="WORD" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="FIRST_DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="LAST_DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="DOC_COUNT" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="POSITION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-    </table>
-    <table name="INNODB_FT_INDEX_TABLE" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="WORD" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="FIRST_DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="LAST_DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="DOC_COUNT" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="DOC_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="POSITION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
     </table>
     <table name="INNODB_LOCKS" schema="" catalog="information_schema" type="SYSTEM VIEW">
       <column name="lock_id" sqlType="VARCHAR" precision="81" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -314,94 +264,6 @@
       <column name="requested_lock_id" sqlType="VARCHAR" precision="81" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="blocking_trx_id" sqlType="VARCHAR" precision="18" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="blocking_lock_id" sqlType="VARCHAR" precision="81" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-    </table>
-    <table name="INNODB_METRICS" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="SUBSYSTEM" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="COUNT" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="MAX_COUNT" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="MIN_COUNT" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="AVG_COUNT" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
-      <column name="COUNT_RESET" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="MAX_COUNT_RESET" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="MIN_COUNT_RESET" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="AVG_COUNT_RESET" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
-      <column name="TIME_ENABLED" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
-      <column name="TIME_DISABLED" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
-      <column name="TIME_ELAPSED" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="TIME_RESET" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
-      <column name="STATUS" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="TYPE" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="COMMENT" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-    </table>
-    <table name="INNODB_SYS_COLUMNS" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="TABLE_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="POS" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="MTYPE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="PRTYPE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="LEN" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_DATAFILES" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="SPACE" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="PATH" sqlType="VARCHAR" precision="4000" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-    </table>
-    <table name="INNODB_SYS_FIELDS" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="INDEX_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="POS" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_FOREIGN" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="ID" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="FOR_NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="REF_NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="N_COLS" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="TYPE" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_FOREIGN_COLS" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="ID" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="FOR_COL_NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="REF_COL_NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="POS" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_INDEXES" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="INDEX_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="TABLE_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="TYPE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="N_FIELDS" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="PAGE_NO" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="SPACE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_TABLES" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="TABLE_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="NAME" sqlType="VARCHAR" precision="655" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="FLAG" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="N_COLS" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="SPACE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="FILE_FORMAT" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
-      <column name="ROW_FORMAT" sqlType="VARCHAR" precision="12" scale="0" nullable="true" jdbcType="12"/>
-      <column name="ZIP_PAGE_SIZE" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_TABLESPACES" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="SPACE" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="NAME" sqlType="VARCHAR" precision="655" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="FLAG" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="FILE_FORMAT" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
-      <column name="ROW_FORMAT" sqlType="VARCHAR" precision="22" scale="0" nullable="true" jdbcType="12"/>
-      <column name="PAGE_SIZE" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="ZIP_PAGE_SIZE" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-    </table>
-    <table name="INNODB_SYS_TABLESTATS" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="TABLE_ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="NAME" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="STATS_INITIALIZED" sqlType="VARCHAR" precision="193" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <column name="NUM_ROWS" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="CLUST_INDEX_SIZE" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="OTHER_INDEX_SIZE" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="MODIFIED_COUNTER" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="AUTOINC" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="REF_COUNT" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
     </table>
     <table name="INNODB_TRX" schema="" catalog="information_schema" type="SYSTEM VIEW">
       <column name="trx_id" sqlType="VARCHAR" precision="18" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -426,8 +288,6 @@
       <column name="trx_last_foreign_key_error" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12"/>
       <column name="trx_adaptive_hash_latched" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="trx_adaptive_hash_timeout" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
-      <column name="trx_is_read_only" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="trx_autocommit_non_locking" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
     </table>
     <table name="KEY_COLUMN_USAGE" schema="" catalog="information_schema" type="SYSTEM VIEW">
       <column name="CONSTRAINT_CATALOG" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -443,12 +303,6 @@
       <column name="REFERENCED_TABLE_NAME" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
       <column name="REFERENCED_COLUMN_NAME" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
     </table>
-    <table name="OPTIMIZER_TRACE" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="QUERY" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
-      <column name="TRACE" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
-      <column name="MISSING_BYTES_BEYOND_MAX_MEM_SIZE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
-      <column name="INSUFFICIENT_PRIVILEGES" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
-    </table>
     <table name="PARAMETERS" schema="" catalog="information_schema" type="SYSTEM VIEW">
       <column name="SPECIFIC_CATALOG" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="SPECIFIC_SCHEMA" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -459,9 +313,8 @@
       <column name="DATA_TYPE" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="CHARACTER_MAXIMUM_LENGTH" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="CHARACTER_OCTET_LENGTH" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="NUMERIC_PRECISION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUMERIC_PRECISION" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="NUMERIC_SCALE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="DATETIME_PRECISION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
       <column name="COLLATION_NAME" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
       <column name="DTD_IDENTIFIER" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
@@ -508,7 +361,7 @@
       <column name="LOAD_OPTION" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
     </table>
     <table name="PROCESSLIST" schema="" catalog="information_schema" type="SYSTEM VIEW">
-      <column name="ID" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
       <column name="USER" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="HOST" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="DB" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
@@ -559,9 +412,8 @@
       <column name="DATA_TYPE" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="CHARACTER_MAXIMUM_LENGTH" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="CHARACTER_OCTET_LENGTH" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="NUMERIC_PRECISION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUMERIC_PRECISION" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="NUMERIC_SCALE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="DATETIME_PRECISION" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
       <column name="COLLATION_NAME" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12"/>
       <column name="DTD_IDENTIFIER" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
