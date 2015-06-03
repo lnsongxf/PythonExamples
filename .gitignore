@@ -55,3 +55,9 @@ target/
 
 # IntelliJ configuration files
 .idea/
+
+# Libraries folder
+Dependencies/
+
+# archive folder
+Archive/
