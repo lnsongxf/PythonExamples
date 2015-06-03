@@ -61,3 +61,7 @@ Dependencies/
 
 # archive folder
 Archive/
+
+# Sensitive information not to be shared
+SensitiveInformation/
+Logs/
