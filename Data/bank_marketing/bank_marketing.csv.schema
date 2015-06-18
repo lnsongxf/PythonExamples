@@ -1,0 +1,41 @@
+{
+    "version": "1.0",
+    "rowId": null,
+    "targetAttributeName": "y",
+    "dataFormat": "CSV",
+    "dataFileContainsHeader": false,
+    "attributes": [
+        {
+            "attributeName": "y",
+            "attributeType": "BINARY"
+
+        },
+        {
+            "attributeName": "age",
+            "attributeType": "NUMERIC"
+        },
+        {
+            "attributeName": "job",
+            "attributeType": "CATEGORICAL"
+        },
+        {
+            "attributeName": "marital",
+            "attributeType": "CATEGORICAL"
+        },
+        {
+            "attributeName": "education",
+            "attributeType": "CATEGORICAL"
+        },
+        {
+            "attributeName": "loan",
+            "attributeType": "CATEGORICAL"
+        },
+        {
+            "attributeName": "campaign",
+            "attributeType": "NUMERIC"
+        },
+        {
+            "attributeName": "duration",
+            "attributeType": "NUMERIC"
+        }]
+}
