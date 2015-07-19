@@ -42,5 +42,4 @@ os.mkdir(path="Data/Discogs_Thumbnails")
 
 # read in the data
 df_jazz = pd.read_csv("Data/jazz_releases.csv", header=True)
-
 df_jazz.iloc[0:100].to_csv("Data/jazz_releases_sample.csv")
